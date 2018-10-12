@@ -2,9 +2,9 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,400italic,600italic|Roboto+Slab:400,700");
 
 /*
-	Editorial by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+    Editorial by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
 html, body, div, span, applet, object,
@@ -3576,4 +3576,24 @@ button:disabled,
     border-top: 0;
     margin-top: 0;
     padding-top: 0;
+}
+
+.carousel-item {
+  height:50vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#webCarousel{
+    padding-top:25px;
+    padding-bottom:-100px;
+}
+
+img{
+max-width: 100%;
+max-height: auto;
 }
