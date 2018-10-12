@@ -3597,3 +3597,22 @@ img{
 max-width: 100%;
 max-height: auto;
 }
+
+#playlist {
+    display:table;
+}
+#playlist li{
+    cursor:pointer;
+    padding:8px;
+}
+
+#playlist li:hover{
+    color:blue;                        
+}
+#videoarea {
+    float:left;
+    width:100%;
+    height:450px;
+    margin:10px;    
+    border:1px solid silver;
+}
