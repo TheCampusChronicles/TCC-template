@@ -1,3 +1,4 @@
+<!--Kshitij lulz-->
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -16,7 +17,7 @@
         <div class="inner">
             <!-- Header -->
             <header id="header">
-                <a href="index.html" class="logo"><strong>The Campus Chronicles</strong></a>
+                <a href="index.html" class="logo"><strong>The Campus Chronicles/Humans of NIEC</strong></a>
                 <ul class="icons">
                     <li><a href="https://twitter.com/thecampuschronicles" target="_blank" class="icon fa-twitter"><span
                             class="label">Twitter</span></a></li>
@@ -29,28 +30,35 @@
                 </ul>
             </header>
             <!-- Video Section-->
-            <div class="container">
+            <div class="container" style="margin-bottom: -150px; margin-top: 50px;">
   				<!--<h2>Humans of NIEC</h2>-->
   				<div class="embed-responsive embed-responsive-4by3">
   					<iframe class="embed-responsive-item" id="videoarea" controls="controls" src=""></iframe>
   				</div>
   			</div>
-
-  			<div class="card" style="width: 18rem; margin-top: 50px;">
-  			  <img class="card-img-top" src="https://via.placeholder.com/350x150" alt="Card image cap">
-  			  <div class="card-body">
-  			    <h5 class="card-title">Card title</h5>
-  			    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  			    <a href="#" class="btn btn-primary">Go somewhere</a>
-  			  </div>
-  			</div>
-			<!-- Playlist -->
-			<div id="play">
-				<ul id="playlist">
-  				    <li movieurl="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fthecampuschronicles1%2Fvideos%2F860737890780910%2F&show_text=0&width=560" ><button>Mr. Praful Kamboj</button></li>
-  				    <li movieurl="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fthecampuschronicles1%2Fvideos%2F2139619646256349%2F&show_text=0&width=560"><button>Photocopy Vale Sir</button></li>          
-  				</ul>
-  			</div>
+  			<!--Playlist-->
+  			<div id= "playlist" class="container">
+  				<div class="row">
+  					<div class="card col" style="width: 18rem; margin-top: 50px;">
+  			  			<img class="card-img-top" src="https://via.placeholder.com/350x150" alt="Card image cap">
+	 			  		<div class="card-body">
+  			    			<button movieurl="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fthecampuschronicles1%2Fvideos%2F860737890780910%2F&show_text=0&width=560"class="btn btn-outline-danger">Mr. Prafful Kamboj</button>
+		  			  	</div>
+		  			</div>
+  					<div class="card col" style="width: 18rem; margin-top: 50px;">
+  				  		<img class="card-img-top" src="https://via.placeholder.com/350x150" alt="Card image cap">
+	 			  		<div class="card-body">
+  			    			<button movieurl="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fthecampuschronicles1%2Fvideos%2F2139619646256349%2F&show_text=0&width=560" class="btn btn-outline-danger">Photocopy Vale Sir</button>
+  			  			</div>
+  					</div>
+  					<div class="card col" style="width: 18rem; margin-top: 50px;">
+  				  		<img class="card-img-top" src="https://via.placeholder.com/350x150" alt="Card image cap">
+	 			  		<div class="card-body">
+  			    			<a href="https://www.facebook.com/thecampuschronicles1/"><button class="btn btn-outline-danger">Coming Soon</button></a>
+  			  			</div>
+  					</div>
+  				</div>
+  			</div>			
     	</div>
 	</div>
     <!-- Sidebar -->
@@ -145,14 +153,14 @@
         crossorigin="anonymous"></script>
 <script>
 $(function() {
-    $("#playlist li").on("click", function() {
+    $("#playlist button").on("click", function() {
         $("#videoarea").attr({
             "src": $(this).attr("movieurl"),
     
         })
     })
     $("#videoarea").attr({
-        "src": $("#playlist li").eq(0).attr("movieurl"),
+        "src": $("#playlist button").eq(0).attr("movieurl"),
      
     })
 })
